@@ -92,7 +92,7 @@ function App() {
       setLoading(true);
 
       const res = await axios.post<ApiResponse>(
-        "http://localhost:8080/",
+        "https://articlenest-xhxa.onrender.com",
         query
       );
 
