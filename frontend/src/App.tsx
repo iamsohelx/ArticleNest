@@ -90,7 +90,6 @@ function App() {
 
     try {
       setLoading(true);
-
       const res = await axios.post<ApiResponse>(
         "https://articlenest-xhxa.onrender.com",
         query
@@ -181,7 +180,7 @@ function App() {
               result.map((val, idx) => (
                 <div
                   key={idx}
-                  className="w-[550px] h-[400px] md:h-[250px] font-poppins flex flex-col text-black p-4 bg-white rounded-md z-20"
+                  className="w-[550px] h-[400px] md:h-[250px] font-poppins overflow-hidden flex flex-col text-black p-4 bg-white rounded-md z-20"
                 >
                   <h1 className="font-bold text-xl">
                     <TextEffect per="char" preset="fade">
