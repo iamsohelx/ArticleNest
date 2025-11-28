@@ -46,7 +46,7 @@ const SearchBox = memo(function SearchBox({
   handleSubmit: () => void;
 }) {
   return (
-    <div className="w-[80%] rounded-md flex gap-5 p-4 bg-white/15 text-white">
+    <div className="w-[95%] md:w-[80%] rounded-md flex gap-5 p-4 bg-white/15 text-white">
       <input
         className="border-none font-poppins w-full outline-none bg-transparent"
         type="text"
@@ -163,7 +163,7 @@ function App() {
 
           {/* Resources Header */}
           {result.length > 0 && (
-            <div className="text-white z-20 font-poppins flex items-center justify-between w-[76%] mb-5">
+            <div className="text-white z-20 font-poppins flex items-center justify-between w-[89%] md:w-[76%] mb-5">
               <h2 className="md:text-xl">Your Resources</h2>
               <button
                 className="cursor-pointer text-xs md:text-xl py-2 px-4 md:px-6 bg-white/15 rounded-md"
@@ -175,7 +175,7 @@ function App() {
           )}
 
           {/* Result Section */}
-          <div className="w-[76%] h-fit rounded-md flex justify-center items-center flex-wrap gap-6 p-4 bg-white/15 text-white overflow-hidden no-scrollbar mb-5">
+          <div className="w-[89%] md:w-[76%] h-fit rounded-md flex justify-center items-center flex-wrap gap-6 p-4 bg-white/15 text-white overflow-hidden no-scrollbar mb-5">
             {result.length > 0 ? (
               result.map((val, idx) => (
                 <div
