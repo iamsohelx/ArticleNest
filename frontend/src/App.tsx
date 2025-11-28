@@ -109,7 +109,7 @@ function App() {
 
   return (
     <>
-      <div className="h-fit relative w-full bg-black overflow-scroll no-scrollbar">
+      <div className="h-screen relative w-full bg-black overflow-scroll no-scrollbar">
 
         {/* Delete Confirmation */}
         {openDialog && (
@@ -143,7 +143,7 @@ function App() {
             minSize={0.6}
             maxSize={1.4}
             particleDensity={100}
-            className="w-full h-fit"
+            className="w-full h-screen"
             particleColor="#FFFFFF"
           />
         </div>
@@ -175,7 +175,7 @@ function App() {
           )}
 
           {/* Result Section */}
-          <div className="w-[76%] h-fit min-h-screen rounded-md flex justify-center items-center flex-wrap gap-6 p-4 bg-white/15 text-white overflow-hidden no-scrollbar mb-5">
+          <div className="w-[76%] h-fit rounded-md flex justify-center items-center flex-wrap gap-6 p-4 bg-white/15 text-white overflow-hidden no-scrollbar mb-5">
             {result.length > 0 ? (
               result.map((val, idx) => (
                 <div
@@ -208,7 +208,7 @@ function App() {
                 <Loader className="text-3xl animate-spin" />
               </span>
             ) : (
-              <h1 className="text-center font-poppins text-gray-400 text-2xl">
+              <h1 className="text-center font-poppins text-gray-400 text-xs md:text-2xl my-50">
                 Type something to get results.
               </h1>
             )}
